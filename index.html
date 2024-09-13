@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Indoor Navigation</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    .controls { position: fixed; top: 10px; left: 10px; z-index: 100; }
+    button, select { display: block; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <button id="start-ar">Start AR Navigation</button>
+    <button id="stop-ar" style="display:none;">Stop Navigation</button>
+    <button id="map-area">Mark Current Area</button>
+    <button id="save-locations">Save Locations</button>
+    <label for="destination">Select Destination:</label>
+    <select id="destination">
+      <option value="">--Select Destination--</option>
+    </select>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@webxr-input-profiles/assets@1.0.0/dist/assets.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
